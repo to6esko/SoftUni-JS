@@ -1,8 +1,8 @@
 /*jshint esversion: 6 */
-function inchesToCentimeters([arg1]) {
-    let inches = parseFloat(arg1);
+function inchesToCentimeters(input) {
+    let inches = Number(input.shift());
     let centimeters = inches * 2.54;
-    console.log("Centimeters = " + centimeters);
+    console.log(`${centimeters.toFixed(2)}`);
 }
-inchesToCentimeters([2]);
+inchesToCentimeters([5]);
 inchesToCentimeters([4.5]);

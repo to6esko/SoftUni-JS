@@ -1,8 +1,8 @@
 /*jshint esversion: 6 */
-function radiansToDegrees([arg1]) {
-    let rad = parseFloat(arg1);
+function radiansToDegrees(input) {
+    let rad = Number(input.shift());
     let deg = rad * 180 / Math.PI;
-    console.log(`${Math.round(deg)}`);
+    console.log(`${Math.round(deg).toFixed(0)}`);
 }
 
 radiansToDegrees([3.1416]);
